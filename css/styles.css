@@ -1,0 +1,102 @@
+@font-face{
+  font-family: 'HelveticaNowDisplay-Black';
+  src: url('fonts/HelveticaNowDisplay-Black.ttf');
+}
+@font-face{
+  font-family: 'Roboto-Thin';
+  src: url('fonts/Roboto-Thin.ttf');
+}
+*{
+  margin: 0px;
+}
+.cntr{
+  color: white;
+  background-color: #011936;
+  height: 966px;
+  width: calc(100% - 17px);
+  visibility: visible;
+  transition: visibility 0s ,height .3s;
+  top: 83px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5625rem;
+  font-family: 'HelveticaNowDisplay-Black';
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+}
+.navbar{
+  background-color: #011936;
+  width: 100px;
+}
+h5{
+  opacity: 1;
+  transition: opacity .4s cubic-bezier(.3,0,.5,1) .4s;
+  margin-top: -85px;
+  text-align: center;
+  font-size: .875rem;
+  line-height: 2.35rem;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  letter-spacing: .4em;
+}
+ul{
+  padding-top: 3px;
+  padding-bottom: 2px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  white;
+}
+li{
+  transition: all .4s cubic-bezier(.3,0,.5,1) .3s;
+  transform: translate(0,0,0);
+  opacity: 1;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  list-style-type: none;
+  font-weight: 800px;
+  cursor: pointer;
+}
+li :hover {
+    color: #fff;
+  }
+a{
+  position: relative;
+  border: 0 none;
+  transition: color .4s linear;
+  display: inline-block;
+  color: #465362;
+  cursor: pointer;
+  }
+  i{
+    position: absolute;
+    height: 8px;
+    width: 150px;
+    bottom: 35px;
+    left: -170px;
+    background: #fff;
+    display: block;
+    overflow: hidden;
+    pointer-events: none;
+    transition: left .4s cubic-bezier(.3,0,.5,1);
+  }
+  li :after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 150px;
+    bottom: 35px;
+    left: -150px;
+    top: 0;
+    background: blue;
+    display: block;
+    pointer-events: none;
+    transition: left .4s cubic-bezier(.3,0,.5,1);
+  }
